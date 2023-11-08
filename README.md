@@ -215,3 +215,4 @@ Route::middleware('auth', 'verified')->prefix('admin')->name('admin.')->group(fu
 php artisan storage:link
 
 ```
+18. In RouteServiceProvider modify dashboard in 'admin'
