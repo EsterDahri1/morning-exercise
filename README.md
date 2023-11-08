@@ -274,8 +274,20 @@ Route::resource('posts', PostController::class)->parameters([
 ```
 31. Fill everything as the previuos exercise! 
 
+32. Remember to validate the data inserted in the forms
+
 ### To paginate
+
+<p>
+Follow the guide in the documentation --> 👉 https://laravel.com/docs/10.x/pagination or go to this site --> https://www.itsolutionstuff.com/post/laravel-10-pagination-example-tutorialexample.html
+</p>
+
+
+```bash
 
 php artisan vendor:publish
 
 laravel-pagination
+
+```
+
