@@ -215,4 +215,53 @@ Route::middleware('auth', 'verified')->prefix('admin')->name('admin.')->group(fu
 php artisan storage:link
 
 ```
+
 18. In RouteServiceProvider modify dashboard in 'admin'
+
+19. create model and controller and everything else by using -a
+
+```bash
+
+php artisan make:model Post -a
+
+```
+
+20. Add in PostController this:
+
+```PostController.php
+
+👉 namespace App\Http\Controllers\Admin;
+
+use App\Models\Post;
+use App\Http\Requests\StorePostRequest;
+use App\Http\Requests\UpdatePostRequest;
+👉use App\Http\Controllers\Controller;
+
+```
+
+21. Delete policies in Http
+
+22. write columns of our migrations table
+
+23. Fill seeder and add model post and str helper remember to add it at the beginnig of the file
+
+24. use $this->class in database seeder
+
+25. migrate the database
+
+26. seed the table
+
+27. In web.php in amdin section
+![Alt text](image.png)
+
+28. in postcontroller complete all the fields
+
+29. Create a new folder named posts in the views that will contain all the blade files connected to the PostController (index.blade.php, edit.blade.php, show.blade.php, store.blade.php ecc.). The files' content is similar to what is done in the laravel-dc-comics project.
+
+30. 
+
+### To paginate
+
+php artisan vendor:publish
+
+laravel-pagination
