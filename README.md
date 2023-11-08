@@ -254,6 +254,12 @@ use App\Http\Requests\UpdatePostRequest;
 27. In web.php in amdin section
 ![Alt text](image.png)
 
+```web.php in Admin part
+
+Route::resource('posts', PostController::class);
+
+```
+
 28. in postcontroller complete all the fields
 
 29. Create a new folder named posts in the views that will contain all the blade files connected to the PostController (index.blade.php, edit.blade.php, show.blade.php, store.blade.php ecc.). The files' content is similar to what is done in the laravel-dc-comics project.
