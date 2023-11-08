@@ -252,7 +252,6 @@ use App\Http\Requests\UpdatePostRequest;
 26. seed the table
 
 27. In web.php in amdin section
-![Alt text](image.png)
 
 ```web.php in Admin part
 
@@ -264,7 +263,16 @@ Route::resource('posts', PostController::class);
 
 29. Create a new folder named posts in the views that will contain all the blade files connected to the PostController (index.blade.php, edit.blade.php, show.blade.php, store.blade.php ecc.). The files' content is similar to what is done in the laravel-dc-comics project.
 
-30. 
+30. How to pass a param in a ressource to have a precise slug in URL. It takes the URI and converts it into a slug by overwriting it.
+
+```web.php in Admin part
+
+Route::resource('posts', PostController::class)->parameters([
+    'posts' => 'post:slug'
+]);
+
+```
+31. Fill everything as the previuos exercise! 
 
 ### To paginate
 
